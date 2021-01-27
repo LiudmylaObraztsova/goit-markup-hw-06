@@ -599,7 +599,11 @@ h5 {
   margin-bottom: 9px;
 }
 
-.all-followers .text {
+.all-followers {
+  margin-right: 93px;
+}
+
+.text-footer {
   color: var(--primary-white-color);
   font-style: normal;
   font-weight: 700;
@@ -650,6 +654,59 @@ h5 {
   width: 20px;
   height: 20px;
   fill: var(--primary-white-color);
+}
+
+.email-form {
+  display: inline-flex;
+  align-items: center;
+}
+
+.send-input {
+  width: 358px;
+  height: 50px;
+  background-color: #2f303a;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  padding: 15px 256px 15px 16px;
+  margin-right: 12px;
+}
+
+.email-form input::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  align-items: center;
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.send-button {
+  display: inline-flex;
+  width: 200px;
+  height: 50px;
+  padding: 10px 28px 10px 28px;
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: transparent;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}
+
+.icon-send {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  fill: currentColor;
 }
 
 /* css для портфолио */
