@@ -315,7 +315,7 @@
           </ul>
         </div>
         <div class="all-followers">
-          <p class="text">присоединяйтесь</p>
+          <p class="text-footer">присоединяйтесь</p>
           <div class="followers">
             <ul class="followers-list list">
               <li class="item">
@@ -349,21 +349,87 @@
             </ul>
           </div>
         </div>
+        <div class="send-form">
+          <p class="text-footer">Подпишитесь на рассылку</p>
+          <form class="email-form">
+            <input type="email" class="send-input" placeholder="E-mail">
+            <button type="button" class="send-button">Подписаться
+              <svg class="icon-send">
+                <use href="./image/sprite.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </section>
   </footer>
   <div data-modal class="backdrop is-hidden">
     <div class="modal">
       <button class="modal-button" data-modal-close type="button">
-        <svg>
+        <svg class="icon-close" width="30" height="30">
           <use href="./image/sprite.svg#close"></use>
         </svg>
       </button>
+      <form class="modal-form" autocomplete="off">
+        <p class="text-modal">Оставьте свои данные, мы вам перезвоним</p>
+  
+        <label class="contact-label">
+          <span class="lable-item">Имя</span>
+          <div class="contact-input">
+            <input autofocus="true" type="text" name="name" class="input" placeholder=" ">
+            <svg class="contact-icon">
+              <use href="./image/sprite.svg#person-blck"></use>
+            </svg>
+          </div>
+        </label>
+  
+  
+  
+        <label class="contact-label">
+          <span class="lable-item">Телефон</span>
+          <div class="contact-input">
+            <input type="tel" name="phone-number" class="input" placeholder=" ">
+            <svg class="contact-icon">
+              <use href="./image/sprite.svg#phone"></use>
+            </svg>
+          </div>
+        </label>
+  
+  
+  
+        <label class="contact-label">
+          <span class="lable-item">Почта</span>
+          <div class="contact-input">
+            <input type="email" name="email" class="input" placeholder=" ">
+            <svg class="contact-icon">
+              <use href="./image/sprite.svg#email"></use>
+            </svg>
+          </div>
+        </label>
+  
+  
+        <label class="contact-label area">
+          <span class="lable-item">Комментарий</span>
+          <div class="contact-area">
+            <textarea class="comments-area" name="comments" rows="10" placeholder="Введите текст"></textarea>
+          </div>
+        </label>
+  
+        <label class="checkbox-label">
+          <div class="check">
+            <input type="checkbox" class="checkbox" name="form-check" value="terms">
+            <span class="icon-check"></span>
+            <span class="text-terms">Соглашаюсь с рассылкой и принимаю <a class="link-terms" href="#">Условия
+                договора</a></span>
+          </div>
+          <button type="submit" class="submit-button">Отправить</button>
+        </label>
+  
+      </form>
+  
     </div>
   </div>
   <script src="./js/modal.js"></script>
-
-
-</body>
-
-</html>
+  </body>
+  
+  </html>

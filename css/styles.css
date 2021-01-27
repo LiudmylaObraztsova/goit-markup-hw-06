@@ -874,14 +874,15 @@ h5 {
 }
 
 .modal {
+  display: block;
   position: absolute;
   width: 528px;
-  height: 521px;
+  min-height: 581px;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  background-color: #ffffff;
-  padding: 8px 8px;
+  background-color: var(--primary-white-color);
+  padding: 40px;
 }
 
 .is-hidden {
@@ -889,6 +890,9 @@ h5 {
   pointer-events: none;
 }
 .modal-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -901,9 +905,184 @@ h5 {
   border-radius: 50%;
   margin-left: auto;
   cursor: pointer;
+  transition: fill var(--animation-duration) var(--animation-type);
 }
 
 .modal-button:hover,
 .modal-button:focus {
   fill: var(--accent-color);
+}
+
+.text-modal {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #212121;
+  margin-top: 0;
+  margin-bottom: 12px;
+  padding: 0;
+}
+
+.modal-form {
+  position: absolute;
+  display: block;
+  width: 448px;
+  top: 40px;
+}
+
+.lable-item {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  margin-bottom: 4px;
+  padding: 0;
+
+  color: #757575;
+}
+
+.input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 11px 12px 11px 42px;
+  transition: border var(--animation-type) var(--animation-duration);
+}
+
+.input:hover,
+.input:focus {
+  border-color: var(--accent-color);
+  outline: none;
+}
+
+.input:hover ~ .contact-icon,
+.input:focus ~ .contact-icon {
+  fill: var(--accent-color);
+}
+
+.contact-input {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.contact-icon {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 21px;
+  fill: #212121;
+  transition: fill var(--animation-duration) var(--animation-type);
+}
+
+.comments-area {
+  width: 448px;
+  height: 120px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 12px 16px;
+  resize: none;
+  transition: border var(--animation-duration) var(--animation-type);
+}
+
+.comments-area:hover,
+.comments-area:focus {
+  border-color: var(--accent-color);
+  outline: none;
+}
+
+.contact-area textarea::placeholder {
+  font-family: roboto;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.contact-label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.contact-label:focus-within > .contact-icon {
+  background-color: pink;
+}
+
+.contact-label.area {
+  margin-bottom: 20px;
+}
+
+.submit-button {
+  display: block;
+  justify-content: center;
+  margin: 0 auto;
+  width: 200px;
+  height: 50px;
+  background: var(--accent-color);
+  color: var(--primary-white-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: transparent;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}
+
+.text-terms {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: #757575;
+}
+
+.icon-check {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  border: 2px solid #000000;
+  border-radius: 2px;
+  margin-right: 8px;
+}
+
+.checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
+}
+
+.checkbox:checked + .icon-check {
+  border: var(--accent-color);
+  background-color: var(--accent-color);
+  background-image: url(../image/icon-check.svg);
+  background-size: contain;
+  background-origin: border-box;
+  transition: background-color var(--animation-duration) var(--animation-type);
+}
+
+.check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  padding: 0;
 }
