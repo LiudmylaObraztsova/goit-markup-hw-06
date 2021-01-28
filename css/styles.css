@@ -546,6 +546,8 @@ h5 {
 
 .footer-container {
   display: flex;
+  justify-content: space-between;
+  align-items: baseline;
 }
 
 .all-contacts {
@@ -611,6 +613,7 @@ h5 {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-top: 0;
   margin-bottom: 20px;
 }
 
